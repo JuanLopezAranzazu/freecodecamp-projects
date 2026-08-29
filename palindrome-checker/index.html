@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Palindrome Checker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <main class="container">
+    <div class="card">
+      <span class="badge">STRING CHECKER</span>
+
+      <h1>Palindrome<br><span>Checker</span></h1>
+
+      <p class="description">
+        Discover whether a word, phrase, or sequence reads the same
+        backwards and forwards.
+      </p>
+
+      <div class="checker">
+        <label for="text-input">Enter your text</label>
+
+        <div class="input-group">
+          <input
+        type="text"
+        id="text-input"
+        placeholder="e.g. A man, a plan, a canal. Panama"
+        autocomplete="off"
+      >
+
+          <button id="check-btn">Check</button>
+        </div>
+
+        <div id="result"></div>
+      </div>
+
+      <div class="examples">
+        <span>Try:</span>
+        <button type="button" class="example">race car</button>
+        <button type="button" class="example">eye</button>
+        <button type="button" class="example">nope</button>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
