@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Telephone Number Validator</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <main class="container">
+
+    <div class="card">
+
+      <span class="badge">PHONE VALIDATOR</span>
+
+      <h1>
+        Telephone Number
+        <span>Validator</span>
+      </h1>
+
+      <p class="description">
+        Enter a US telephone number and check whether it follows
+        a valid American phone number format.
+      </p>
+
+      <div class="validator">
+
+        <label for="user-input">Enter a phone number</label>
+
+        <div class="input-group">
+
+          <input
+        type="text"
+        id="user-input"
+        placeholder="e.g. 1 555-555-5555"
+        autocomplete="off"
+      >
+
+          <button id="check-btn">
+        Check
+      </button>
+
+        </div>
+
+        <button id="clear-btn">
+      Clear results
+    </button>
+
+        <div id="results-div"></div>
+
+      </div>
+
+      <div class="examples">
+
+        <span>Try:</span>
+
+        <button type="button" class="example">
+      1 555-555-5555
+    </button>
+
+        <button type="button" class="example">
+      (555)555-5555
+    </button>
+
+        <button type="button" class="example">
+      5555555555
+    </button>
+
+      </div>
+
+      <div class="formats">
+
+        <div class="format">
+          <strong>1</strong>
+          <span>Country code</span>
+        </div>
+
+        <div class="format">
+          <strong>(555)</strong>
+          <span>Area code</span>
+        </div>
+
+        <div class="format">
+          <strong>555</strong>
+          <span>Prefix</span>
+        </div>
+
+        <div class="format">
+          <strong>5555</strong>
+          <span>Line number</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
