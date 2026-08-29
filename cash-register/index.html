@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Cash Register</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <main class="container">
+
+    <div class="card">
+
+      <span class="badge">CASH REGISTER</span>
+
+      <h1>
+        Cash
+        <span>Register</span>
+      </h1>
+
+      <p class="description">
+        Enter the amount of cash provided by the customer and
+        calculate the change using the money available in the drawer.
+      </p>
+
+      <div class="register">
+
+        <div class="price-section">
+          <span class="label">Item price</span>
+          <strong id="price-display">$1.87</strong>
+        </div>
+
+        <label for="cash">Customer cash</label>
+
+        <div class="input-group">
+
+          <input
+        type="number"
+        id="cash"
+        placeholder="e.g. 5.00"
+        min="0"
+        step="0.01"
+      >
+
+          <button id="purchase-btn">
+        Purchase
+      </button>
+
+        </div>
+
+        <div id="change-due"></div>
+
+      </div>
+
+      <div class="drawer-title">
+        <span>Cash drawer</span>
+        <span>Available</span>
+      </div>
+
+      <div class="drawer">
+
+        <div class="denomination">
+          <span>PENNY</span>
+          <strong>$1.01</strong>
+        </div>
+
+        <div class="denomination">
+          <span>NICKEL</span>
+          <strong>$2.05</strong>
+        </div>
+
+        <div class="denomination">
+          <span>DIME</span>
+          <strong>$3.10</strong>
+        </div>
+
+        <div class="denomination">
+          <span>QUARTER</span>
+          <strong>$4.25</strong>
+        </div>
+
+        <div class="denomination">
+          <span>ONE</span>
+          <strong>$90.00</strong>
+        </div>
+
+        <div class="denomination">
+          <span>FIVE</span>
+          <strong>$55.00</strong>
+        </div>
+
+        <div class="denomination">
+          <span>TEN</span>
+          <strong>$20.00</strong>
+        </div>
+
+        <div class="denomination">
+          <span>TWENTY</span>
+          <strong>$60.00</strong>
+        </div>
+
+        <div class="denomination">
+          <span>ONE HUNDRED</span>
+          <strong>$100.00</strong>
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
