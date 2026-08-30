@@ -22,8 +22,7 @@ function isValidUSNumber(phoneNumber) {
   * 1 555 555 5555
     */
 
-  const phoneRegex =
-    /^(1\s?)?(\(\d{3}\)|\d{3})[\s-]?\d{3}[\s-]?\d{4}$/;
+  const phoneRegex = /^(1\s?)?(\(\d{3}\)|\d{3})[\s-]?\d{3}[\s-]?\d{4}$/;
 
   return phoneRegex.test(phoneNumber);
 }
@@ -37,11 +36,9 @@ checkButton.addEventListener("click", () => {
   }
 
   if (isValidUSNumber(phoneNumber)) {
-    resultsDiv.textContent =
-      `Valid US number: ${phoneNumber}`;
+    resultsDiv.textContent = `Valid US number: ${phoneNumber}`;
   } else {
-    resultsDiv.textContent =
-      `Invalid US number: ${phoneNumber}`;
+    resultsDiv.textContent = `Invalid US number: ${phoneNumber}`;
   }
 });
 

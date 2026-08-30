@@ -3,15 +3,9 @@ const checkButton = document.getElementById("check-btn");
 const result = document.getElementById("result");
 
 function isPalindrome(text) {
+  const cleanText = text.toLowerCase().replace(/[^a-z0-9]/g, "");
 
-  const cleanText = text
-    .toLowerCase()
-    .replace(/[^a-z0-9]/g, "");
-
-  const reversedText = cleanText
-    .split("")
-    .reverse()
-    .join("");
+  const reversedText = cleanText.split("").reverse().join("");
 
   return cleanText === reversedText;
 }

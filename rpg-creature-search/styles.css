@@ -32,8 +32,7 @@ body {
 
   padding: 48px;
 
-  box-shadow:
-    0 25px 60px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
 }
 
 .badge {
@@ -132,8 +131,7 @@ h1 span {
 #search-input:focus {
   border-color: #818cf8;
 
-  box-shadow:
-    0 0 0 3px rgba(129, 140, 248, 0.15);
+  box-shadow: 0 0 0 3px rgba(129, 140, 248, 0.15);
 }
 
 #search-button {
@@ -357,7 +355,6 @@ h1 span {
 /* Responsive */
 
 @media (max-width: 600px) {
-
   body {
     padding: 14px;
   }

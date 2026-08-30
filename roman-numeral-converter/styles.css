@@ -121,8 +121,7 @@ label {
 #number:focus {
   border-color: #818cf8;
 
-  box-shadow:
-    0 0 0 3px rgba(129, 140, 248, 0.15);
+  box-shadow: 0 0 0 3px rgba(129, 140, 248, 0.15);
 }
 
 /* Removes the number input arrows */
@@ -248,7 +247,6 @@ label {
 }
 
 @media (max-width: 550px) {
-
   .card {
     padding: 30px 22px;
   }

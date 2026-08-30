@@ -19,7 +19,6 @@ body {
   padding: 50px 0;
 }
 
-
 /* Header */
 
 .header {
@@ -39,7 +38,6 @@ body {
   color: #aab4c3;
   font-size: 1.05rem;
 }
-
 
 /* Form */
 
@@ -69,7 +67,6 @@ legend {
   font-weight: bold;
 }
 
-
 /* Labels and inputs */
 
 #survey-form > fieldset > label:not(.option) {
@@ -93,7 +90,9 @@ textarea {
   font-size: 1rem;
   font-family: inherit;
   outline: none;
-  transition: border-color 0.2s, box-shadow 0.2s;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
 }
 
 input[type="text"]:focus,
@@ -113,7 +112,6 @@ textarea::placeholder {
 select {
   cursor: pointer;
 }
-
 
 /* Questions */
 
@@ -139,14 +137,12 @@ select {
   cursor: pointer;
 }
 
-
 /* Textarea */
 
 textarea {
   resize: vertical;
   min-height: 140px;
 }
-
 
 /* Submit button */
 
@@ -160,7 +156,9 @@ textarea {
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
-  transition: background 0.2s, transform 0.2s;
+  transition:
+    background 0.2s,
+    transform 0.2s;
 }
 
 #submit:hover {
@@ -171,7 +169,6 @@ textarea {
 #submit:active {
   transform: translateY(0);
 }
-
 
 /* Responsive design */
 

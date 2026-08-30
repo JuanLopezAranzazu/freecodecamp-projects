@@ -16,7 +16,7 @@ function convertToRoman(number) {
     { value: 9, symbol: "IX" },
     { value: 5, symbol: "V" },
     { value: 4, symbol: "IV" },
-    { value: 1, symbol: "I" }
+    { value: 1, symbol: "I" },
   ];
 
   let result = "";
@@ -42,14 +42,12 @@ convertButton.addEventListener("click", () => {
   const number = Number(inputValue);
 
   if (number < 1) {
-    output.textContent =
-      "Please enter a number greater than or equal to 1";
+    output.textContent = "Please enter a number greater than or equal to 1";
     return;
   }
 
   if (number >= 4000) {
-    output.textContent =
-      "Please enter a number less than or equal to 3999";
+    output.textContent = "Please enter a number less than or equal to 3999";
     return;
   }
 

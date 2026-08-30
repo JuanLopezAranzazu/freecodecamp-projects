@@ -1,215 +1,157 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Learning Survey</title>
 
-  <title>Developer Learning Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-  <link rel="stylesheet" href="styles.css">
-</head>
+  <body>
+    <main class="container">
+      <header class="header">
+        <h1 id="title">Developer Learning Survey</h1>
 
-<body>
-
-  <main class="container">
-
-    <header class="header">
-      <h1 id="title">Developer Learning Survey</h1>
-
-      <p id="description">
-        Help us understand how developers learn, build projects, and improve
-        their programming skills.
-      </p>
-    </header>
-
-    <form id="survey-form">
-
-      <!-- Personal information -->
-      <fieldset>
-        <legend>Personal information</legend>
-
-        <label id="name-label" for="name">
-          Full name
-        </label>
-
-        <input
-          id="name"
-          name="name"
-          type="text"
-          placeholder="Enter your full name"
-          required
-        >
-
-        <label id="email-label" for="email">
-          Email address
-        </label>
-
-        <input
-          id="email"
-          name="email"
-          type="email"
-          placeholder="you@example.com"
-          required
-        >
-
-        <label id="number-label" for="number">
-          Years of programming experience
-        </label>
-
-        <input
-          id="number"
-          name="experience"
-          type="number"
-          min="0"
-          max="50"
-          placeholder="Example: 3"
-        >
-      </fieldset>
-
-      <!-- Learning level -->
-      <fieldset>
-        <legend>Learning profile</legend>
-
-        <label for="dropdown">
-          What best describes your current level?
-        </label>
-
-        <select id="dropdown" name="level">
-          <option value="beginner">Beginner</option>
-          <option value="intermediate">Intermediate</option>
-          <option value="advanced">Advanced</option>
-          <option value="professional">Professional</option>
-        </select>
-
-        <p class="question">
-          What is your preferred way to learn?
+        <p id="description">
+          Help us understand how developers learn, build projects, and improve
+          their programming skills.
         </p>
+      </header>
 
-        <label class="option">
+      <form id="survey-form">
+        <!-- Personal information -->
+        <fieldset>
+          <legend>Personal information</legend>
+
+          <label id="name-label" for="name"> Full name </label>
+
           <input
-            type="radio"
-            name="learning-method"
-            value="projects"
-          >
-          Building projects
-        </label>
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Enter your full name"
+            required
+          />
 
-        <label class="option">
+          <label id="email-label" for="email"> Email address </label>
+
           <input
-            type="radio"
-            name="learning-method"
-            value="courses"
-          >
-          Online courses
-        </label>
+            id="email"
+            name="email"
+            type="email"
+            placeholder="you@example.com"
+            required
+          />
 
-        <label class="option">
+          <label id="number-label" for="number">
+            Years of programming experience
+          </label>
+
           <input
-            type="radio"
-            name="learning-method"
-            value="documentation"
-          >
-          Reading documentation
-        </label>
+            id="number"
+            name="experience"
+            type="number"
+            min="0"
+            max="50"
+            placeholder="Example: 3"
+          />
+        </fieldset>
 
-        <label class="option">
-          <input
-            type="radio"
-            name="learning-method"
-            value="mentoring"
-          >
-          Mentoring
-        </label>
-      </fieldset>
+        <!-- Learning level -->
+        <fieldset>
+          <legend>Learning profile</legend>
 
-      <!-- Technologies -->
-      <fieldset>
-        <legend>Technologies</legend>
+          <label for="dropdown">
+            What best describes your current level?
+          </label>
 
-        <p class="question">
-          Which technologies are you currently learning?
-        </p>
+          <select id="dropdown" name="level">
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+            <option value="professional">Professional</option>
+          </select>
 
-        <label class="option">
-          <input
-            type="checkbox"
-            name="technology"
-            value="html-css"
-          >
-          HTML & CSS
-        </label>
+          <p class="question">What is your preferred way to learn?</p>
 
-        <label class="option">
-          <input
-            type="checkbox"
-            name="technology"
-            value="javascript"
-          >
-          JavaScript
-        </label>
+          <label class="option">
+            <input type="radio" name="learning-method" value="projects" />
+            Building projects
+          </label>
 
-        <label class="option">
-          <input
-            type="checkbox"
-            name="technology"
-            value="typescript"
-          >
-          TypeScript
-        </label>
+          <label class="option">
+            <input type="radio" name="learning-method" value="courses" />
+            Online courses
+          </label>
 
-        <label class="option">
-          <input
-            type="checkbox"
-            name="technology"
-            value="react"
-          >
-          React
-        </label>
+          <label class="option">
+            <input type="radio" name="learning-method" value="documentation" />
+            Reading documentation
+          </label>
 
-        <label class="option">
-          <input
-            type="checkbox"
-            name="technology"
-            value="node"
-          >
-          Node.js
-        </label>
+          <label class="option">
+            <input type="radio" name="learning-method" value="mentoring" />
+            Mentoring
+          </label>
+        </fieldset>
 
-        <label class="option">
-          <input
-            type="checkbox"
-            name="technology"
-            value="python"
-          >
-          Python
-        </label>
-      </fieldset>
+        <!-- Technologies -->
+        <fieldset>
+          <legend>Technologies</legend>
 
-      <!-- Comments -->
-      <fieldset>
-        <legend>Additional feedback</legend>
+          <p class="question">Which technologies are you currently learning?</p>
 
-        <label for="comments">
-          What would make your programming learning experience better?
-        </label>
+          <label class="option">
+            <input type="checkbox" name="technology" value="html-css" />
+            HTML & CSS
+          </label>
 
-        <textarea
-          id="comments"
-          name="comments"
-          rows="6"
-          placeholder="Write your suggestions here..."
-        ></textarea>
-      </fieldset>
+          <label class="option">
+            <input type="checkbox" name="technology" value="javascript" />
+            JavaScript
+          </label>
 
-      <button id="submit" type="submit">
-        Submit survey
-      </button>
+          <label class="option">
+            <input type="checkbox" name="technology" value="typescript" />
+            TypeScript
+          </label>
 
-    </form>
+          <label class="option">
+            <input type="checkbox" name="technology" value="react" />
+            React
+          </label>
 
-  </main>
+          <label class="option">
+            <input type="checkbox" name="technology" value="node" />
+            Node.js
+          </label>
 
-</body>
+          <label class="option">
+            <input type="checkbox" name="technology" value="python" />
+            Python
+          </label>
+        </fieldset>
 
+        <!-- Comments -->
+        <fieldset>
+          <legend>Additional feedback</legend>
+
+          <label for="comments">
+            What would make your programming learning experience better?
+          </label>
+
+          <textarea
+            id="comments"
+            name="comments"
+            rows="6"
+            placeholder="Write your suggestions here..."
+          ></textarea>
+        </fieldset>
+
+        <button id="submit" type="submit">Submit survey</button>
+      </form>
+    </main>
+  </body>
 </html>
