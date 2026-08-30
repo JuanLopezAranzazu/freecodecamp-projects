@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>CodeBox - Developer Workspace</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+
+    <header id="header">
+      <a href="#home" class="logo">
+        <img
+          id="header-img"
+          src="https://cdn-icons-png.flaticon.com/512/1005/1005141.png"
+          alt="CodeBox logo"
+        />
+        <span>CodeBox</span>
+      </a>
+
+      <nav id="nav-bar">
+        <a class="nav-link" href="#features"> Features </a>
+
+        <a class="nav-link" href="#workflow"> Workflow </a>
+
+        <a class="nav-link" href="#pricing"> Pricing </a>
+      </nav>
+    </header>
+
+    <!-- Main content -->
+
+    <main id="home">
+      <!-- Hero -->
+
+      <section class="hero">
+        <div class="hero-content">
+          <span class="badge">BUILT FOR DEVELOPERS</span>
+
+          <h1>
+            Your workspace.
+            <span>Anywhere.</span>
+          </h1>
+
+          <p>
+            CodeBox is a compact developer workstation designed to give you the
+            tools you need to build, test, and deploy your ideas wherever you
+            work.
+          </p>
+
+          <a href="#pricing" class="hero-button"> Get CodeBox </a>
+        </div>
+      </section>
+
+      <!-- Features -->
+
+      <section id="features" class="section">
+        <div class="section-heading">
+          <span class="section-label">01 — FEATURES</span>
+
+          <h2>Everything you need to build.</h2>
+
+          <p>
+            A focused workspace designed around the daily needs of modern
+            software developers.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <article class="feature-card">
+            <div class="feature-icon">&lt;/&gt;</div>
+
+            <h3>Powerful Hardware</h3>
+
+            <p>
+              Run your development environment, containers, databases, and local
+              services without slowing down your workflow.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon">{ }</div>
+
+            <h3>Developer Ready</h3>
+
+            <p>
+              Built to work with your favorite programming languages,
+              frameworks, terminals, and development tools.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon">⚡</div>
+
+            <h3>Fast Workflow</h3>
+
+            <p>
+              Reduce setup time and focus on writing code, testing ideas, and
+              shipping useful software.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Video -->
+
+      <section id="workflow" class="section workflow">
+        <div class="section-heading">
+          <span class="section-label">02 — WORKFLOW</span>
+
+          <h2>Designed around your workflow.</h2>
+
+          <p>
+            See how CodeBox can become the central workspace for your next
+            project.
+          </p>
+        </div>
+
+        <div class="video-container">
+          <iframe
+            id="video"
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            title="CodeBox product presentation"
+            allow="
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+            "
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <!-- Pricing -->
+
+      <section id="pricing" class="section">
+        <div class="section-heading">
+          <span class="section-label">03 — PRICING</span>
+
+          <h2>Choose your setup.</h2>
+
+          <p>
+            Select the CodeBox configuration that fits your development
+            workflow.
+          </p>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="price-card">
+            <h3>Starter</h3>
+
+            <div class="price">$499</div>
+
+            <p>For developers starting their journey.</p>
+
+            <ul>
+              <li>8 GB RAM</li>
+              <li>256 GB SSD</li>
+              <li>Developer keyboard</li>
+              <li>1 year warranty</li>
+            </ul>
+
+            <a href="#signup" class="price-button"> Choose Starter </a>
+          </article>
+
+          <article class="price-card featured">
+            <span class="popular">POPULAR</span>
+
+            <h3>Pro</h3>
+
+            <div class="price">$799</div>
+
+            <p>For serious development workflows.</p>
+
+            <ul>
+              <li>16 GB RAM</li>
+              <li>512 GB SSD</li>
+              <li>Developer keyboard</li>
+              <li>2 year warranty</li>
+            </ul>
+
+            <a href="#signup" class="price-button"> Choose Pro </a>
+          </article>
+
+          <article class="price-card">
+            <h3>Studio</h3>
+
+            <div class="price">$1,199</div>
+
+            <p>For demanding professional projects.</p>
+
+            <ul>
+              <li>32 GB RAM</li>
+              <li>1 TB SSD</li>
+              <li>Developer keyboard</li>
+              <li>3 year warranty</li>
+            </ul>
+
+            <a href="#signup" class="price-button"> Choose Studio </a>
+          </article>
+        </div>
+      </section>
+
+      <!-- Newsletter -->
+
+      <section id="signup" class="signup">
+        <h2>Stay in the loop.</h2>
+
+        <p>Get product updates, developer tips, and CodeBox news.</p>
+
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Enter your email address"
+            required
+          />
+
+          <input id="submit" type="submit" value="Subscribe" />
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+
+    <footer id="footer">
+      <p>© 2026 CodeBox. Built for developers.</p>
+    </footer>
+  </body>
+</html>
