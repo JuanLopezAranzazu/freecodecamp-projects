@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Git & GitHub Documentation</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <header>Git & GitHub Guide</header>
+
+      <a class="nav-link" href="#Getting_Started"> Getting Started </a>
+
+      <a class="nav-link" href="#Repositories"> Repositories </a>
+
+      <a class="nav-link" href="#Branches"> Branches </a>
+
+      <a class="nav-link" href="#Commits"> Commits </a>
+
+      <a class="nav-link" href="#Pull_Requests"> Pull Requests </a>
+
+      <a class="nav-link" href="#Useful_Commands"> Useful Commands </a>
+    </nav>
+
+    <main id="main-doc">
+      <!-- Getting Started -->
+
+      <section class="main-section" id="Getting_Started">
+        <header>Getting Started</header>
+
+        <p>
+          Git is a distributed version control system that allows developers to
+          track changes in their projects and collaborate with other people.
+        </p>
+
+        <p>
+          Before using Git, you should install it on your computer and configure
+          your identity with your name and email address.
+        </p>
+
+        <p>
+          A new Git repository can be created inside an existing project using
+          the <code>git init</code> command.
+        </p>
+
+        <pre><code>git init</code></pre>
+
+        <ul>
+          <li>Install Git on your operating system.</li>
+          <li>Configure your Git username.</li>
+          <li>Configure your Git email address.</li>
+        </ul>
+      </section>
+
+      <!-- Repositories -->
+
+      <section class="main-section" id="Repositories">
+        <header>Repositories</header>
+
+        <p>
+          A repository contains all the files, history, branches, and
+          configuration information associated with a project.
+        </p>
+
+        <p>
+          Repositories can exist locally on your computer or remotely on
+          platforms such as GitHub.
+        </p>
+
+        <p>
+          You can copy an existing remote repository to your computer using the
+          <code>git clone</code> command.
+        </p>
+
+        <pre><code>git clone https://github.com/user/project.git</code></pre>
+
+        <ul>
+          <li>Local repositories are stored on your computer.</li>
+          <li>Remote repositories allow collaboration.</li>
+          <li>GitHub can host Git repositories online.</li>
+        </ul>
+      </section>
+
+      <!-- Branches -->
+
+      <section class="main-section" id="Branches">
+        <header>Branches</header>
+
+        <p>
+          Branches allow developers to work on different versions of a project
+          without modifying the main branch directly.
+        </p>
+
+        <p>
+          A common workflow is to create a feature branch, make changes, and
+          later merge those changes into the main branch.
+        </p>
+
+        <p>
+          The following command creates a new branch and switches to it:
+          <code>git switch -c feature-login</code>.
+        </p>
+
+        <pre><code>git switch -c feature-login</code></pre>
+
+        <ul>
+          <li>Branches isolate new development work.</li>
+          <li>The main branch usually contains stable code.</li>
+          <li>Branches can be merged after development is complete.</li>
+        </ul>
+      </section>
+
+      <!-- Commits -->
+
+      <section class="main-section" id="Commits">
+        <header>Commits</header>
+
+        <p>
+          A commit represents a saved snapshot of changes in a Git repository.
+        </p>
+
+        <p>
+          Before creating a commit, files are normally added to the staging area
+          using the <code>git add</code> command.
+        </p>
+
+        <pre><code>git add .</code></pre>
+
+        <p>
+          After staging the changes, use <code>git commit</code> with a
+          descriptive message.
+        </p>
+
+        <pre><code>git commit -m "Add login form"</code></pre>
+
+        <ul>
+          <li>Keep commits focused on a specific change.</li>
+          <li>Write clear and meaningful commit messages.</li>
+          <li>Review your changes before committing them.</li>
+        </ul>
+      </section>
+
+      <!-- Pull Requests -->
+
+      <section class="main-section" id="Pull_Requests">
+        <header>Pull Requests</header>
+
+        <p>
+          A pull request is a proposal to merge changes from one branch into
+          another branch, commonly used when working with GitHub.
+        </p>
+
+        <p>
+          Pull requests allow team members to review code, discuss changes, and
+          identify possible problems before merging.
+        </p>
+
+        <p>
+          A typical workflow involves pushing your branch to a remote repository
+          and then opening a pull request.
+        </p>
+
+        <pre><code>git push origin feature-login</code></pre>
+
+        <ul>
+          <li>Create a branch for your changes.</li>
+          <li>Push the branch to the remote repository.</li>
+          <li>Open a pull request for code review.</li>
+          <li>Address review comments.</li>
+        </ul>
+      </section>
+
+      <!-- Useful Commands -->
+
+      <section class="main-section" id="Useful_Commands">
+        <header>Useful Commands</header>
+
+        <p>
+          Git provides many commands for inspecting and managing the current
+          state of a repository.
+        </p>
+
+        <p>
+          The <code>git status</code> command displays modified, staged, and
+          untracked files.
+        </p>
+
+        <pre><code>git status</code></pre>
+
+        <p>
+          You can inspect previous commits using
+          <code>git log</code>.
+        </p>
+
+        <pre><code>git log --oneline</code></pre>
+
+        <ul>
+          <li><code>git status</code> — View repository changes.</li>
+          <li><code>git add</code> — Stage files.</li>
+          <li><code>git commit</code> — Create a commit.</li>
+          <li><code>git pull</code> — Download remote changes.</li>
+          <li><code>git push</code> — Upload local commits.</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
