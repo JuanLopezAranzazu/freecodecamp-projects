@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Random Quote Machine</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main>
+      <div id="quote-box">
+        <div class="quote-icon">"</div>
+
+        <p id="text">Loading quote...</p>
+
+        <p id="author">Loading author...</p>
+
+        <div class="actions">
+          <a
+            id="tweet-quote"
+            href="https://twitter.com/intent/tweet"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Tweet current quote"
+          >
+            Tweet
+          </a>
+
+          <button id="new-quote" type="button">New Quote</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
